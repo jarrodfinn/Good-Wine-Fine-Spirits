@@ -37,6 +37,8 @@ function Detail(props) {
             <p>{item.label}</p>
             <h4>Description: </h4>
             <p>{item.description}</p>
+            <h4>Quantity On Hand (bottles): </h4>
+            <p>{item.inventory}</p>
           </article>
         </Col>
       </Row>
