@@ -11,18 +11,17 @@ const itemSchema = new Schema({
   // name of the continent
   origin: { type: String, required: true },
   // name of the country of origin
-  counrty: { type: String, required: true },
+  country: { type: String, required: true },
   // name of the region of the country of origin
   region: { type: String, required: true },
   // description of the wine
-  // description: { type: String, required: true },
+  description: { type: String, required: true },
   // price in US dollars
   price: Number,
-  // Is the item in stock
-  inStock: Boolean,
-  // date item was added to the inventory
-  date: { type: Date, default: Date.now },
-});
+  // The amount of bottles going into inventory
+  inventory: Number,
+},
+{ timestamps: true});
 
 const Item = mongoose.model("Item", itemSchema);
 

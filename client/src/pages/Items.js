@@ -41,8 +41,8 @@ function Items() {
   // Then reload items from the database
   function handleFormSubmit(event) {
     event.preventDefault();
-    console.log(event.target);
-    if (formObject.name && formObject.varietal) {
+    console.log(formObject);
+    if (formObject.name && formObject.category) {
       API.saveItem({
         name: formObject.name,
         category: formObject.category,
@@ -51,12 +51,13 @@ function Items() {
         country: formObject.country,
         region: formObject.region,
         price: formObject.price,
-        inStock: formObject.inStock,
+        inventory: formObject.inventory,
         description: formObject.description,
         date: formObject.date,
       })
-        .then((res) => loadItems())
-        .catch((err) => console.log(err));
+        .then(res => loadItems())
+      console.log(formObject.name);
+        // .catch((err) => console.log(err));
     }
   }
 
@@ -105,8 +106,8 @@ function Items() {
             />
             <Input
               onChange={handleInputChange}
-              name="inStock"
-              placeholder="In Stock (required)"
+              name="inventory"
+              placeholder="Inventory Amount (required)"
             />
             <TextArea
               onChange={handleInputChange}
@@ -114,17 +115,7 @@ function Items() {
               placeholder="Description (required)"
             />
             <FormBtn
-              disabled={
-                !(
-                  formObject.name &&
-                  formObject.category &&
-                  formObject.varietal &&
-                  formObject.origin &&
-                  formObject.country &&
-                  formObject.region &&
-                  formObject.price 
-                )
-              }
+              disabled={!(formObject.name && formObject.varietal)}
               onClick={handleFormSubmit}
             >
               Submit Wine

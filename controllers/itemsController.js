@@ -1,6 +1,6 @@
 const db = require("../models");
 
-// Defining methods for the booksController
+// Defining methods for the itemsController
 module.exports = {
   findAll: function(req, res) {
     db.Item
@@ -15,7 +15,8 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-  create: function(req, res) {
+  create: function (req, res) {
+    console.log(req.body);
     db.Item
       .create(req.body)
       .then(dbModel => res.json(dbModel))
