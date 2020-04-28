@@ -44,7 +44,7 @@ function Detail(props) {
       </Row>
       <Row>
         <Col size="md-2">
-          <Link to="/">← Back</Link>
+          <Link to="/items">← Back</Link>
         </Col>
       </Row>
     </Container>
