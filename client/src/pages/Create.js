@@ -63,7 +63,7 @@ function Items() {
   return (
     <Container fluid>
       <Row>
-        <Col size="md-12">
+        <Col size="md-7">
           <Jumbotron>
             <h1>What wines would you like to add into inventory?</h1>
           </Jumbotron>
@@ -120,7 +120,7 @@ function Items() {
               Submit Wine
             </FormBtn>
           </form>
-        </Col>
+        </Col >
           {items.length ? (
             <List>
               {items.map((item) => (

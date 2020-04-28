@@ -64,27 +64,27 @@ function Items() {
   return (
     <Container fluid>
       <Row>
-        <Col size="md-12 sm-12">
-          <Jumbotron>
-            <h1>Wines in Inventory</h1>
-          </Jumbotron>
-          {items.length ? (
-            <List>
-              {items.map((item) => (
-                <ListItem key={item._id}>
-                  <Link to={"/items/" + item._id}>
-                    <strong>
-                      {item.name} - {item.varietal} - ${item.price}
-                    </strong>
-                  </Link>
-                  <DeleteBtn onClick={() => deleteItem(item._id)} />
-                </ListItem>
-              ))}
-            </List>
-          ) : (
-            <h3>No Results to Display</h3>
-          )}
-        </Col>
+          <Col size="md-12 sm-12">
+            <Jumbotron>
+              <h1>Wines in Inventory</h1>
+            </Jumbotron>
+            {items.length ? (
+              <List>
+                {items.map((item) => (
+                  <ListItem key={item._id}>
+                    <Link to={"/items/" + item._id}>
+                      <strong>
+                        {item.name} - {item.varietal} - ${item.price}
+                      </strong>
+                    </Link>
+                    <DeleteBtn onClick={() => deleteItem(item._id)} />
+                  </ListItem>
+                ))}
+              </List>
+            ) : (
+              <h3>No Results to Display</h3>
+            )}
+          </Col>
       </Row>
     </Container>
   );
