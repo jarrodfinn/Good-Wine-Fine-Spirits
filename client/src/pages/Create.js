@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { Link } from "react-router-dom";
@@ -24,12 +23,6 @@ function Items() {
       .catch((err) => console.log(err));
   }
 
-  // Deletes a item from the database with a given id, then reloads items from the db
-//   function deleteItem(id) {
-//     API.deleteItem(id)
-//       .then((res) => loadItems())
-//       .catch((err) => console.log(err));
-//   }
 
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
@@ -134,7 +127,6 @@ function Items() {
                       {item.name} - {item.varietal} - ${item.price}
                     </strong>
                   </Link>
-                  {/* <DeleteBtn onClick={() => deleteItem(item._id)} /> */}
                 </ListItem>
               ))}
             </List>
