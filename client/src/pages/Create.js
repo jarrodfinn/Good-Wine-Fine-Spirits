@@ -63,7 +63,7 @@ function Items() {
   return (
     <Container fluid>
       <Row>
-        <Col size="md-7">
+        <Col size="md-6">
           <Jumbotron>
             <h1>What wines would you like to add into inventory?</h1>
           </Jumbotron>
@@ -121,6 +121,10 @@ function Items() {
             </FormBtn>
           </form>
         </Col >
+        <Col size="md-6">
+        <Jumbotron>
+            <h1>Inventory</h1>
+          </Jumbotron>
           {items.length ? (
             <List>
               {items.map((item) => (
@@ -137,6 +141,7 @@ function Items() {
           ) : (
             <h3>No Results to Display</h3>
           )}
+        </Col>
       </Row>
     </Container>
   );

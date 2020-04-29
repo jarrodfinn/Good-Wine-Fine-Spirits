@@ -64,7 +64,8 @@ function Items() {
   return (
     <Container fluid>
       <Row>
-          <Col size="md-12 sm-12">
+          <Col size='md-1'></Col> 
+          <Col size="md-10 sm-12">
             <Jumbotron>
               <h1>Wines in Inventory</h1>
             </Jumbotron>
@@ -85,6 +86,7 @@ function Items() {
               <h3>No Results to Display</h3>
             )}
           </Col>
+          <Col size='md-1'></Col>
       </Row>
     </Container>
   );
