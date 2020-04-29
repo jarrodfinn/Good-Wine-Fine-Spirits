@@ -1,5 +1,6 @@
 import React from "react";
 import Jumbotron from "../components/Jumbotron";
+import "./style.css"
 
 
 
@@ -22,20 +23,81 @@ function Home() {
         <img src={require("../images/carsonridgecabsauv.webp")} />
         <img src={require("../images/governersbaysauvblanc.webp")} />
         <img src={require("../images/MASCOTAVINEYARDSUNANIME.webp")} /> */}
-        <img src={require("../images/benoit.jpg")} />
-        <img src={require("../images/bichi.jpg")} />
-        <img src={require("../images/borgo.jpg")} />
-        <img src={require("../images/douro.jpg")} />
-        <img src={require("../images/escandalo.jpg")} />
-        <img src={require("../images/gandines.jpg")} />
-        <img src={require("../images/grolet.jpg")} />
-        <img src={require("../images/guimaro.jpg")} />
-        <img src={require("../images/montozzi.jpg")} />
-        <img src={require("../images/nerantzi.jpg")} />
-        <img src={require("../images/piollot.jpg")} />
-        <img src={require("../images/serata.jpg")} />
-        <img src={require("../images/siete.jpg")} />
-        <img src={require("../images/subliminal.jpg")} />
+        <img
+          src={require("../images/benoit.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/bichi.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/borgo.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/douro.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/enderle.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/escandalo.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/gandines.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/grolet.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/guimaro.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/montozzi.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/nerantzi.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/piollot.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/serata.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/siete.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
+        <img
+          src={require("../images/subliminal.jpg")}
+          className="wine-image"
+          alt="wine"
+        />
       </div>
     );
 }

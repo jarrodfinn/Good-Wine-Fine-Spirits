@@ -63,7 +63,7 @@ function Items() {
   return (
     <Container fluid>
       <Row>
-        <Col size="md-6">
+        <Col size="md-7">
           <Jumbotron>
             <h1>What wines would you like to add into inventory?</h1>
           </Jumbotron>
@@ -121,7 +121,7 @@ function Items() {
             </FormBtn>
           </form>
         </Col >
-        <Col size="md-6">
+        <Col size="md-5">
         <Jumbotron>
             <h1>Inventory</h1>
           </Jumbotron>
