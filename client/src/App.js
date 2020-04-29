@@ -5,6 +5,7 @@ import Items from "./pages/Items";
 import Detail from "./pages/Detail";
 import Create from "./pages/Create";
 import NoMatch from "./pages/NoMatch";
+import Login from "./pages/Login";
 import Nav from "./components/Nav";
 
 function App() {
@@ -13,7 +14,10 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path={["/"]}>
+        <Route exact path={["/"]}>
+            <Login />
+          </Route>
+          <Route exact path={["/home"]}>
             <Home />
           </Route>
           <Route exact path={["/items"]}>
