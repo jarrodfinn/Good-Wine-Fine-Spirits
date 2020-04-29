@@ -31,36 +31,6 @@ function Items() {
       .catch((err) => console.log(err));
   }
 
-  // Handles updating component state when the user types into the input field
-  // function handleInputChange(event) {
-  //   const { name, value } = event.target;
-  //   setFormObject({ ...formObject, [name]: value });
-  // }
-
-  // When the form is submitted, use the API.saveitem method to save the item data
-  // Then reload items from the database
-  // function handleFormSubmit(event) {
-  //   event.preventDefault();
-  //   console.log(formObject);
-  //   if (formObject.name && formObject.category) {
-  //     API.saveItem({
-  //       name: formObject.name,
-  //       category: formObject.category,
-  //       varietal: formObject.varietal,
-  //       origin: formObject.origin,
-  //       country: formObject.country,
-  //       region: formObject.region,
-  //       price: formObject.price,
-  //       inventory: formObject.inventory,
-  //       description: formObject.description,
-  //       date: formObject.date,
-  //     })
-  //       .then(res => loadItems())
-  //     console.log(formObject.name);
-  //       // .catch((err) => console.log(err));
-  //   }
-  // }
-
   return (
     <Container fluid>
       <Row>

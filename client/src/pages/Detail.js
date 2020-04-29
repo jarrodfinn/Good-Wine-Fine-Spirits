@@ -28,20 +28,42 @@ function Detail(props) {
       </Row>
       <Row>
         <Col size="md-10 md-offset-1">
-          <article>
-            <h4>Price: </h4>
-            <p>${item.price}</p>
-            <h4>Country: </h4>
-            <p>{item.country}</p>
-            <h4>Wine Label: </h4>
-            <p>{item.label}</p>
-            <h4>Description: </h4>
-            <p>{item.description}</p>
-            <h4>Quantity On Hand (bottles): </h4>
-            <p>{item.inventory}</p>
-          </article>
+          <div className="container">
+            <div className="row row-cols-3">
+              <div className="col">
+                <h4>Price: </h4>
+                <p>${item.price}</p>
+              </div>
+
+              <div className="col">
+                <h4>Country: </h4>
+                <p>{item.country}</p>
+              </div>
+              <div className="col">
+                <h4>Quantity On Hand (bottles): </h4>
+                <p>{item.inventory}</p>
+              </div>
+            </div>
+            <br />
+            <br />
+            <br />
+            <div className="row row-cols-3">
+              <div className="col">
+                <h4>Wine Label: </h4>
+                <p>{item.label}</p>
+              </div>
+              <div className="col">
+                <h4>Description: </h4>
+                <p>{item.description}</p>
+              </div>
+            </div>
+          </div>
+
         </Col>
       </Row>
+      <br />
+      <br />
+
       <Row>
         <Col size="md-2">
           <Link to="/items">← Back</Link>
