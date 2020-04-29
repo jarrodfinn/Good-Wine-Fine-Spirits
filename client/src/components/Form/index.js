@@ -10,6 +10,19 @@ export function Input(props) {
   );
 }
 
+export function Dropdown(props) {
+  return (
+    <div className="form-group">
+      <select className="form-control" name="photo" {...props}>
+        <option value="grapefruit">Grapefruit</option>
+        <option value="lime">Lime</option>
+        <option default value="coconut">Coconut</option>
+        <option value="mango">Mango</option>
+      </select>
+    </div>
+  )
+}
+
 export function TextArea(props) {
   return (
     <div className="form-group">

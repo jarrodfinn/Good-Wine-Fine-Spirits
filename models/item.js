@@ -14,12 +14,15 @@ const itemSchema = new Schema({
   country: { type: String, required: true },
   // name of the region of the country of origin
   region: { type: String, required: true },
+  // price in US dollars
+  price: { type: Number, required: true},
+  // The amount of bottles going into inventory
+  inventory: { type: Number, required: true},
   // description of the wine
   description: { type: String, required: true },
-  // price in US dollars
-  price: Number,
-  // The amount of bottles going into inventory
-  inventory: Number,
+  ///image for the wine
+  photo: {type: String}
+
 },
 { timestamps: true});
 
