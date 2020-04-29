@@ -5,7 +5,7 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn } from "../components/Form";
+import { Input, TextArea, FormBtn, Dropdown } from "../components/Form";
 
 function Items() {
   // Setting our component's initial state
@@ -53,7 +53,7 @@ function Items() {
         price: formObject.price,
         inventory: formObject.inventory,
         description: formObject.description,
-        date: formObject.date,
+        photo: formObject.photo
       }).then((res) => loadItems())
     //   console.log(formObject.name);
       .catch((err) => console.log(err));
@@ -86,7 +86,7 @@ function Items() {
             <Input
               onChange={handleInputChange}
               name="origin"
-              placeholder="Continent (required)"
+              placeholder="Origin (required)"
             />
             <Input
               onChange={handleInputChange}
@@ -113,6 +113,9 @@ function Items() {
               name="description"
               placeholder="Description (required)"
             />
+            <Dropdown
+            name="photo"
+            onChange={handleInputChange} />
             <FormBtn
               disabled={!(formObject.name && formObject.varietal)}
               onClick={handleFormSubmit}
