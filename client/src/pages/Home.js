@@ -18,11 +18,6 @@ function Home() {
           This will be styled better late, probably in a component. But it
           works!
         </h3>
-        {/* <img src={require("../images/minamesacabsauv.webp")} />
-        <img src={require("../images/buttercreamchardonnay.webp")} />
-        <img src={require("../images/carsonridgecabsauv.webp")} />
-        <img src={require("../images/governersbaysauvblanc.webp")} />
-        <img src={require("../images/MASCOTAVINEYARDSUNANIME.webp")} /> */}
         <img
           src={require("../images/benoit.jpg")}
           className="wine-image"
