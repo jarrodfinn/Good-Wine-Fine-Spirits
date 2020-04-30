@@ -19,7 +19,7 @@ const itemSeed = [
     price: 10.89,
     inventory: 144,
     description: "This shit red",
-    photo: "benoit",
+    photo: "",
     date: new Date(Date.now())
   },
   {
@@ -56,6 +56,7 @@ const itemSeed = [
     price: 18.49,
     inventory: 144,
     description: "Funky",
+    photo: "guimaro",
     date: new Date(Date.now()),
   },
   {
@@ -68,6 +69,7 @@ const itemSeed = [
     price: 22.39,
     inventory: 144,
     description: "Dank",
+    photo: "subliminal",
     date: new Date(Date.now()),
   },
   {
@@ -80,6 +82,7 @@ const itemSeed = [
     price: 11.59,
     inventory: 144,
     description: "Ole",
+    photo: "siete",
     date: new Date(Date.now()),
   },
   {
@@ -92,6 +95,7 @@ const itemSeed = [
     price: 16.59,
     inventory: 144,
     description: "rot is gut",
+    photo: "enderle",
     date: new Date(Date.now()),
   },
   {
@@ -104,6 +108,7 @@ const itemSeed = [
     price: 17.49,
     inventory: 144,
     description: "Classic",
+    photo: "grolet",
     date: new Date(Date.now()),
   },
   {
@@ -116,6 +121,7 @@ const itemSeed = [
     price: 17.29,
     inventory: 144,
     description: "Iconic",
+    photo: "benoit",
     date: new Date(Date.now()),
   },
   {
@@ -128,6 +134,7 @@ const itemSeed = [
     price: 14.09,
     inventory: 144,
     description: "Steep grade",
+    photo: "douro",
     date: new Date(Date.now()),
   },
   {
@@ -140,6 +147,7 @@ const itemSeed = [
     price: 58.99,
     inventory: 144,
     description: "Bubbly",
+    photo: "piollot",
     date: new Date(Date.now()),
   },
   {
@@ -152,6 +160,7 @@ const itemSeed = [
     price: 69.19,
     inventory: 144,
     description: "What is this?",
+    photo: "nerantzi",
     date: new Date(Date.now()),
   },
   {
@@ -164,6 +173,7 @@ const itemSeed = [
     price: 16.39,
     inventory: 144,
     description: "Dangerous",
+    photo: "gandines",
     date: new Date(Date.now()),
   },
   {
@@ -176,6 +186,7 @@ const itemSeed = [
     price: 10.99,
     inventory: 144,
     description: "Whatever",
+    photo: "campo",
     date: new Date(Date.now()),
   },
   {
@@ -188,6 +199,7 @@ const itemSeed = [
     price: 17.29,
     inventory: 144,
     description: "Clandestine",
+    photo: "escandalo",
     date: new Date(Date.now()),
   },
   {
@@ -200,6 +212,7 @@ const itemSeed = [
     price: 26.09,
     inventory: 144,
     description: "For real?",
+    photo: "bichi",
     date: new Date(Date.now()),
   },
   {
@@ -212,6 +225,7 @@ const itemSeed = [
     price: 19.99,
     inventory: 144,
     description: "Yes, please!",
+    photo: "borgo",
     date: new Date(Date.now()),
   },
   {
@@ -224,6 +238,7 @@ const itemSeed = [
     price: 17.29,
     inventory: 144,
     description: "Take home to mother",
+    photo: "montozzi",
     date: new Date(Date.now()),
   },
   {
@@ -236,6 +251,7 @@ const itemSeed = [
     price: 17.29,
     inventory: 144,
     description: "Good morning",
+    photo: "serata",
     date: new Date(Date.now()),
   },
 ];
