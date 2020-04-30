@@ -21,7 +21,9 @@ function Detail(props) {
         <Col size="md-12">
           <Jumbotron>
             <h1>
+              <i>
               {item.name} - {item.varietal} - {item.inventory} bottles
+              </i>
             </h1>
           </Jumbotron>
         </Col>
