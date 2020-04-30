@@ -126,9 +126,9 @@ function Items() {
               {items.map((item) => (
                 <ListItem key={item._id}>
                   <Link to={"/items/" + item._id}>
-                    <strong>
+                    <em>
                       {item.name} - {item.varietal} - ${item.price}
-                    </strong>
+                    </em>
                   </Link>
                 </ListItem>
               ))}

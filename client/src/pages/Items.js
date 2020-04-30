@@ -5,6 +5,7 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
+import "./style.css";
 // import { Input, TextArea, FormBtn } from "../components/Form";
 
 function Items() {
@@ -44,9 +45,9 @@ function Items() {
                 {items.map((item) => (
                   <ListItem key={item._id}>
                     <Link to={"/items/" + item._id}>
-                      <strong>
+                      <em>
                         {item.name} - {item.varietal} - ${item.price}
-                      </strong>
+                      </em>
                     </Link>
                     <DeleteBtn onClick={() => deleteItem(item._id)} />
                   </ListItem>
