@@ -19,7 +19,8 @@ const itemSeed = [
     price: 10.89,
     inventory: 144,
     description: "This shit red",
-    date: new Date(Date.now()),
+    photo: "benoit",
+    date: new Date(Date.now())
   },
   {
     name: "Jarrod's White",
