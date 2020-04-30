@@ -4,7 +4,7 @@ import "./style.css";
 function Nav() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light collapse navbar-collapse">
-      <a className="navbar-brand navbar-nav mr-auto" href="/">
+      <a className="navbar-brand navbar-nav mr-auto" href="/home">
         <h3>Good Wine and Fine Spirits</h3>
       </a>
       <br />
