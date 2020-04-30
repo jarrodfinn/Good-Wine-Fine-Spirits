@@ -6,12 +6,10 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import "./style.css";
-// import { Input, TextArea, FormBtn } from "../components/Form";
 
 function Items() {
   // Setting our component's initial state
   const [items, setItems] = useState([]);
-  // const [formObject, setFormObject] = useState({});
 
   // Load all items and store them with setitems
   useEffect(() => {
@@ -31,33 +29,32 @@ function Items() {
       .then((res) => loadItems())
       .catch((err) => console.log(err));
   }
-
   return (
     <Container fluid>
       <Row>
-          <Col size='md-1'></Col> 
-          <Col size="md-10 sm-12">
-            <Jumbotron>
-              <h1>Wines in Inventory</h1>
-            </Jumbotron>
-            {items.length ? (
-              <List>
-                {items.map((item) => (
-                  <ListItem key={item._id}>
-                    <Link to={"/items/" + item._id}>
-                      <em>
-                        {item.name} - {item.varietal} - ${item.price}
-                      </em>
-                    </Link>
-                    <DeleteBtn onClick={() => deleteItem(item._id)} />
-                  </ListItem>
-                ))}
-              </List>
-            ) : (
-              <h3>No Results to Display</h3>
-            )}
-          </Col>
-          <Col size='md-1'></Col>
+        <Col size="md-1"></Col>
+        <Col size="md-10 sm-12">
+          <Jumbotron>
+            <h1>Wines in Inventory</h1>
+          </Jumbotron>
+          {items.length ? (
+            <List>
+              {items.map((item) => (
+                <ListItem key={item._id}>
+                  <Link to={"/items/" + item._id}>
+                    <em>
+                      {item.name} - {item.varietal} - ${item.price}
+                    </em>
+                  </Link>
+                  <DeleteBtn onClick={() => deleteItem(item._id)} />
+                </ListItem>
+              ))}
+            </List>
+          ) : (
+            <h3>No Results to Display</h3>
+          )}
+        </Col>
+        <Col size="md-1"></Col>
       </Row>
     </Container>
   );

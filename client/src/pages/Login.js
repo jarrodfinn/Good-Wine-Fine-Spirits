@@ -14,36 +14,50 @@ function Login() {
     }
 
     return (
-        <Container fluid>
-            <Row>
-                <Col size='md-2'></Col>
-                <Col size="md-8">
-                    <Jumbotron>
-                        <h1>Login</h1>
-                    </Jumbotron>
-                    <form>
-                        <Input
-                            onChange={handleInputChange}
-                            name="username"
-                            placeholder="Username (required)"
-                        />
-                        <Input
-                            onChange={handleInputChange}
-                            name="password"
-                            placeholder="Password (required)"
-                        />
+      <Container fluid>
+        <Row>
+          <Col size="md-2">
+            {" "}
+            <img
+              src={require("../images/wine.jpg")}
+              className="wine-image"
+              alt="wine"
+            />
+          </Col>
+          <Col size="md-8">
+            <Jumbotron>
+              <h1>Login</h1>
+            </Jumbotron>
+            <form>
+              <Input
+                onChange={handleInputChange}
+                name="username"
+                placeholder="Username (required)"
+              />
+              <Input
+                onChange={handleInputChange}
+                name="password"
+                placeholder="Password (required)"
+              />
 
-                        <Link to="/home">
-                            <FormBtn disabled={!(formObject.username && formObject.password)}>
-                                Login
-                            </FormBtn>
-                        </Link>
-                    </form>
-                </Col >
-                <Col size='md-2'></Col>
-
-            </Row>
-        </Container>
+              <Link to="/home">
+                <FormBtn
+                  disabled={!(formObject.username && formObject.password)}
+                >
+                  Login
+                </FormBtn>
+              </Link>
+            </form>
+          </Col>
+          <Col size="md-2">
+            <img
+              src={require("../images/wine.jpg")}
+              className="wine-image"
+              alt="wine"
+            />
+          </Col>
+        </Row>
+      </Container>
     );
 }
 
