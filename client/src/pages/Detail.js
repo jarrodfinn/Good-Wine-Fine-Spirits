@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
-import * as images from "../images"
+import * as images from "../images";
 
 function Detail(props) {
   const [item, setItem] = useState({});
@@ -14,7 +14,7 @@ function Detail(props) {
     API.getItem(id)
       .then((res) => setItem(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [item]);
 
   return (
     <Container fluid>
@@ -23,8 +23,10 @@ function Detail(props) {
           <Jumbotron>
             <h1>
               <i>
-              {item.name} - {item.varietal} - {item.inventory} bottles
+                {item.name} - {item.varietal}
               </i>
+              <br />
+              <em>{item.inventory} bottles</em>
             </h1>
           </Jumbotron>
         </Col>
@@ -37,7 +39,6 @@ function Detail(props) {
                 <h4>Price: </h4>
                 <p>${item.price}</p>
               </div>
-
               <div className="col">
                 <h4>Country: </h4>
                 <p>{item.country}</p>
@@ -53,20 +54,18 @@ function Detail(props) {
             <div className="row row-cols-3">
               <div className="col">
                 <h4>Wine Label: </h4>
-                <p>{item.label}</p>
+                <img alt="wine" src={images[item.photo]} />
               </div>
               <div className="col">
                 <h4>Description: </h4>
-                <img alt="wine" src={images[item.photo]} />
+                <p>{item.description}</p>
               </div>
             </div>
           </div>
-
         </Col>
       </Row>
       <br />
       <br />
-
       <Row>
         <Col size="md-2">
           <Link to="/items">← Back</Link>
