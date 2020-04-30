@@ -14,7 +14,7 @@ function Detail(props) {
     API.getItem(id)
       .then((res) => setItem(res.data))
       .catch((err) => console.log(err));
-  }, [item]);
+  }, []);
 
   return (
     <Container fluid>
@@ -23,10 +23,8 @@ function Detail(props) {
           <Jumbotron>
             <h1>
               <i>
-                {item.name} - {item.varietal}
+                {item.name} - {item.varietal} - {item.inventory} bottles
               </i>
-              <br />
-              <em>{item.inventory} bottles</em>
             </h1>
           </Jumbotron>
         </Col>
