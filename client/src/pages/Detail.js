@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
+import * as images from "../images"
 
 function Detail(props) {
   const [item, setItem] = useState({});
@@ -56,7 +57,7 @@ function Detail(props) {
               </div>
               <div className="col">
                 <h4>Description: </h4>
-                <p>{item.description}</p>
+                <img alt="wine" src={images[item.photo]} />
               </div>
             </div>
           </div>
