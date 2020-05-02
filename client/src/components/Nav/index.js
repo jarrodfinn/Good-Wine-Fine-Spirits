@@ -17,6 +17,11 @@ function Nav() {
           Inventory List<span className="sr-only">(current)</span>
         </h6>
       </a>
+      <a className="nav-item navbar-brand" href="/cart">
+        <h6>
+          Cart<span className="sr-only">(current)</span>
+        </h6>
+      </a>
 
       {/* <Link to="/create">Create</Link> */}
       <br />
