@@ -7,6 +7,7 @@ import Create from "./pages/Create";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Nav from "./components/Nav";
+import Cart from './pages/Cart'
 
 function App() {
   return (
@@ -23,8 +24,14 @@ function App() {
           <Route exact path={["/items"]}>
             <Items />
           </Route>
+          <Route exact path={["/cart"]}>
+            <Cart />
+          </Route>
           <Route exact path="/items/:id">
             <Detail />
+          </Route>
+          <Route exact path={["/", "/create"]}>
+            <Create />
           </Route>
           <Route exact path={["/", "/create"]}>
             <Create />
