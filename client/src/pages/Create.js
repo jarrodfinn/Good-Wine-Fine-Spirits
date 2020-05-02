@@ -46,8 +46,7 @@ function Items() {
         price: formObject.price,
         inventory: formObject.inventory,
         description: formObject.description,
-        photo: formObject.photo
-      }).then((res) => loadItems())
+              }).then((res) => loadItems())
     //   console.log(formObject.name);
       .catch((err) => console.log(err));
     }
