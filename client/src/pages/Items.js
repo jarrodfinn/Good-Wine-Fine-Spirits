@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import "./style.css";
+import AddToCartBtn from "../components/AddToCartBtn";
 
 function Items() {
   // Setting our component's initial state
@@ -29,6 +30,13 @@ function Items() {
       .then((res) => loadItems())
       .catch((err) => console.log(err));
   }
+
+  function addItemToCart() {
+    return (
+      <h1>THIS BUTTON WILL WORK</h1>
+    )
+  }
+  
   return (
     <Container fluid>
       <Row>
@@ -47,6 +55,7 @@ function Items() {
                     </em>
                   </Link>
                   <DeleteBtn onClick={() => deleteItem(item._id)} />
+                  <AddToCartBtn onClick={() => addItemToCart()} />
                 </ListItem>
               ))}
             </List>
