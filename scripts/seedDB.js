@@ -32,6 +32,7 @@ const itemSeed = [
     price: 14.49,
     inventory: 144,
     description: "This shit white",
+    photo: "",
     date: new Date(Date.now()),
   },
   {
@@ -44,6 +45,7 @@ const itemSeed = [
     price: 11.29,
     inventory: 144,
     description: "This shit pink",
+    photo: "",
     date: new Date(Date.now()),
   },
   {
