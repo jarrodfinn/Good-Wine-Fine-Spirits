@@ -58,8 +58,8 @@ function Items() {
       <Row>
         <Col size="md-7">
           <Jumbotron>
-            <h1>Create a NEW inventory item: </h1>
           </Jumbotron>
+          <h1>Create a NEW inventory item: </h1>
           <form>
           <div>
           <p>Name: </p><Input
@@ -142,8 +142,8 @@ function Items() {
         </Col>
         <Col size="md-5">
           <Jumbotron>
-            <h1>Current Inventory Items </h1>
           </Jumbotron>
+          <h1>Current Inventory Items </h1>
           {items.length ? (
             <List>
               {items.map((item) => (
