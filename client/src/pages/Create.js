@@ -61,51 +61,77 @@ function Items() {
             <h1>Create a NEW inventory item: </h1>
           </Jumbotron>
           <form>
-            <Input
+          <div>
+          <p>Name: </p><Input
               onChange={handleInputChange}
               name="name"
               placeholder="Name (required)"
             />
-            <Input
+          </div>
+          <div>
+            <p>Category: </p>
+          <Input
               onChange={handleInputChange}
               name="category"
               placeholder="Category (required)"
             />
-            <Input
+          </div>
+          <div>
+            <p>Varietal: </p>
+          <Input
               onChange={handleInputChange}
               name="varietal"
               placeholder="Varietal (required)"
             />
-            <Input
+          </div>
+          <div>
+            <p>Origin: </p>
+          <Input
               onChange={handleInputChange}
               name="origin"
               placeholder="Origin (required)"
             />
-            <Input
+          </div>
+          <div>
+            <p>Country: </p>
+          <Input
               onChange={handleInputChange}
               name="country"
               placeholder="Country (required)"
             />
-            <Input
+          </div>
+          <div>
+            <p>Region: </p>
+          <Input
               onChange={handleInputChange}
               name="region"
               placeholder="Region (required)"
             />
-            <Input
+          </div>
+          <div>
+            <p>Price: </p>
+          <Input
               onChange={handleInputChange}
               name="price"
               placeholder="Price (required)"
             />
-            <Input
+          </div>
+          <div>
+            <p>Inventory Amount: </p>
+          <Input
               onChange={handleInputChange}
               name="inventory"
               placeholder="Inventory Amount (required)"
             />
-            <TextArea
+          </div>
+          <div>
+            <p>Description: </p>
+          <TextArea
               onChange={handleInputChange}
               name="description"
               placeholder="Description (required)"
             />
+          </div>
             <FormBtn
               disabled={!(formObject.name && formObject.varietal)}
               onClick={handleFormSubmit}
