@@ -4,7 +4,8 @@ import API from "../utils/API";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
-import { Input, TextArea, FormBtn, Dropdown } from "../components/Form";
+import { Input, TextArea, FormBtn } from "../components/Form";
+
 
 function Items() {
   // Setting our component's initial state
@@ -57,7 +58,7 @@ function Items() {
       <Row>
         <Col size="md-7">
           <Jumbotron>
-            <h1>What wines would you like to add into inventory?</h1>
+            <h1>Create a NEW inventory item: </h1>
           </Jumbotron>
           <form>
             <Input
@@ -105,20 +106,17 @@ function Items() {
               name="description"
               placeholder="Description (required)"
             />
-            <Dropdown
-            name="photo"
-            onChange={handleInputChange} />
             <FormBtn
               disabled={!(formObject.name && formObject.varietal)}
               onClick={handleFormSubmit}
             >
-              Submit Wine
+              Submit Item
             </FormBtn>
           </form>
-        </Col >
+        </Col>
         <Col size="md-5">
-        <Jumbotron>
-            <h1>Inventory</h1>
+          <Jumbotron>
+            <h1>Current Inventory Items </h1>
           </Jumbotron>
           {items.length ? (
             <List>

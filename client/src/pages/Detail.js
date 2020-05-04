@@ -52,7 +52,12 @@ function Detail(props) {
             <div className="row row-cols-3">
               <div className="col">
                 <h4>Wine Label: </h4>
-                <img alt="wine" src={images[item.photo]} />
+                <img alt="wine" src={images[item.photo]} style={{
+                  height: "auto",
+                  maxHeight: "250px",
+                  width: "auto",
+                  maxWidth: "250px",
+                }}/>
               </div>
               <div className="col">
                 <h4>Description: </h4>
