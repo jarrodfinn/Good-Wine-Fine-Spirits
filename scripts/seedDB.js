@@ -74,7 +74,8 @@ const itemSeed = [
     region: "California",
     price: 22.39,
     inventory: 144,
-    description: "Dank",
+    description:
+      "Subliminal is a partnership between the Parientes (Nomadic Distribution) and the Porters (Amplify Wines).  Born out of a shared desire to capture a style of Cabernet Sauvignon almost forgotten in California- that of a humble table wine- Subliminal is a weeknight wine that speaks strongly of its origins.  Its dusty tannin and dried fruit recall 1970s California, while its bright, fresh, lifted character is a purely modern take on the grape.  From old vines in the Santa Ynez Valley planted over 40 years ago, aged completely in neutral oak, with no additions other than a minimum of sulfur dioxide, this is a new side of California Cabernet Sauvignon that will carry you from summer BBQs to winter braises.",
     photo: "subliminal",
     date: new Date(Date.now()),
   },

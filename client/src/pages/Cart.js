@@ -32,7 +32,9 @@ function Cart() {
   return (
     <Container fluid>
           <Jumbotron>
-            <h1>Cart</h1>
+            <p className="jumboTitle">
+          <h1>Cart</h1>
+          </p>
           </Jumbotron>
     </Container>
   );

@@ -22,7 +22,9 @@ function Home() {
   return (
     <Container fluid>
       <Jumbotron>
-        <h1>Welcome to the Good Wine & Fine Spirits!!!</h1>
+        <p className="jumboTitle">
+        <h1>Welcome to Good Wine & Fine Spirits!!!</h1>
+        </p>
       </Jumbotron>
       <div className="conainer">
         <h3>

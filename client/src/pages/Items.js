@@ -43,8 +43,10 @@ function Items() {
         <Col size="md-1"></Col>
         <Col size="md-10 sm-12">
           <Jumbotron>
+            <p className="jumboTitle">
+              <h1>Current Inventory Items: </h1>
+            </p>
           </Jumbotron>
-            <h1>Current Inventory Items: </h1>
           {items.length ? (
             <List>
               {items.map((item) => (
@@ -52,8 +54,9 @@ function Items() {
                   <Link to={"/items/" + item._id}>
                     <em
                       style={{
-                        color: "darkblue",
+                        color: "lightsalmon",
                         fontSize: "20px",
+                        textDecoration: "underline",
                       }}
                     >
                       {item.name} - {item.varietal} - ${item.price}

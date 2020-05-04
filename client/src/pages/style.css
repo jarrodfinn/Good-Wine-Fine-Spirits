@@ -3,6 +3,18 @@
   max-height: 250px;
   width: auto;
   max-width: 250px;
-  color: forestgreen
+}
+.ptag {
+  text-decoration: underline;
+  color: lightsalmon;
+
+}
+
+.jumboTitle {
+background-color: white;
+color: darkslategray;
+padding-bottom: 8px;
+padding-top: 4px;
+
 }
 
