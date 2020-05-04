@@ -21,7 +21,9 @@ const itemSchema = new Schema({
   // description of the wine
   description: { type: String, required: true },
   ///image for the wine
-  photo: {type: String}
+  photo: {type: String},
+  // for favorites button
+  favorite: {type: Boolean, default: false}
 
 },
 { timestamps: true});
