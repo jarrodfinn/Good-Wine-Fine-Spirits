@@ -19,8 +19,11 @@ function Login() {
           <Col size="md-2">
             {" "}
             <img
+              style={{
+                height: "705px",
+                width:"250px"
+              }}
               src={require("../images/wine.jpg")}
-              className="wine-image"
               alt="wine"
             />
           </Col>
@@ -51,8 +54,11 @@ function Login() {
           </Col>
           <Col size="md-2">
             <img
+              style={{
+                height: "705px",
+                width:"250px"
+              }}
               src={require("../images/wine.jpg")}
-              className="wine-image"
               alt="wine"
             />
           </Col>

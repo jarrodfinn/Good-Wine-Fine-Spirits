@@ -33,9 +33,6 @@ function App() {
           <Route exact path={["/", "/create"]}>
             <Create />
           </Route>
-          <Route exact path={["/", "/create"]}>
-            <Create />
-          </Route>
           <Route>
             <NoMatch />
           </Route>
