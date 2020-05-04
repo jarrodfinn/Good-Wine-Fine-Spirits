@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
@@ -20,10 +19,10 @@ function Login() {
             {" "}
             <img
               style={{
-                height: "705px",
-                width:"250px"
+                height: "600px",
+                width: "300px",
               }}
-              src={require("../images/wine.jpg")}
+              src={require("../images/outline-black-bottle.jpg")}
               alt="wine"
             />
           </Col>
@@ -55,10 +54,10 @@ function Login() {
           <Col size="md-2">
             <img
               style={{
-                height: "705px",
-                width:"250px"
+                height: "600px",
+                width: "300px",
               }}
-              src={require("../images/wine.jpg")}
+              src={require("../images/outline-black-bottle.jpg")}
               alt="wine"
             />
           </Col>

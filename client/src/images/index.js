@@ -14,7 +14,7 @@ import piollot from "./piollot.jpg";
 import serata from "./serata.jpg";
 import siete from "./siete.jpg";
 import subliminal from "./subliminal.jpg";
-import wine from "./wine.jpg"
+// import wine from "./wine.jpg"
 
 
-export {benoit,bichi,borgo,campo,douro,enderle,escandalo,gandines,grolet,guimaro,montozzi,nerantzi,piollot,serata,siete,subliminal,wine}
+export {benoit,bichi,borgo,campo,douro,enderle,escandalo,gandines,grolet,guimaro,montozzi,nerantzi,piollot,serata,siete,subliminal}
