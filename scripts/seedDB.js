@@ -18,7 +18,7 @@ const itemSeed = [
     region: "Pennslyvania",
     price: 10.89,
     inventory: 144,
-    description: "This shit red",
+    description: "An uplifting red wine from the Lehigh Valley. On the nose red-currant, molasses and wild sage, with hints of bramble and mint on the finish. ",
     photo: "",
     date: new Date(Date.now())
   },

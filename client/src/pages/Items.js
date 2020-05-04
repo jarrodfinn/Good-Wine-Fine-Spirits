@@ -50,16 +50,21 @@ function Items() {
               {items.map((item) => (
                 <ListItem key={item._id}>
                   <Link to={"/items/" + item._id}>
-                    <em>
+                    <em
+                      style={{
+                        color: "darkblue",
+                        fontSize: "20px",
+                      }}
+                    >
                       {item.name} - {item.varietal} - ${item.price}
                     </em>
                   </Link>
-                  <div >
+                  <div>
+                    <AddToCartBtn onClick={() => addItemToCart()} />
+                  </div>
+                  <div>
                     <DeleteBtn onClick={() => deleteItem(item._id)} />
                   </div>
-                  <div>                    
-                  <AddToCartBtn onClick={() => addItemToCart()} />
-                 </div>
                 </ListItem>
               ))}
             </List>

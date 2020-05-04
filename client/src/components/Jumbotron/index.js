@@ -8,9 +8,10 @@ function Jumbotron({ children }) {
         clear: "both",
         paddingTop: 100,
         textAlign: "center",
-        backgroundImage: `url(${bgimage})`
+        backgroundImage: `url(${bgimage})`,
+        color: "forestgreen"
       }}
-      className="jumbotron jumbotron-fluid bg-light text-info"
+      className="jumbotron jumbotron-fluid"
     >
       <container>
       {children}
