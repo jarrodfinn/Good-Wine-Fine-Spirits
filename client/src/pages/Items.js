@@ -43,8 +43,8 @@ function Items() {
         <Col size="md-1"></Col>
         <Col size="md-10 sm-12">
           <Jumbotron>
-            <h1>Current Inventory Items </h1>
           </Jumbotron>
+            <h1>Current Inventory Items: </h1>
           {items.length ? (
             <List>
               {items.map((item) => (

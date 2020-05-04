@@ -18,9 +18,10 @@ const itemSeed = [
     region: "Pennslyvania",
     price: 10.89,
     inventory: 144,
-    description: "An uplifting red wine from the Lehigh Valley. On the nose red-currant, molasses and wild sage, with hints of bramble and mint on the finish. ",
+    description:
+      "An uplifting red wine from the Lehigh Valley. On the nose red-currant, molasses and wild sage, with hints of bramble and mint on the finish. ",
     photo: "",
-    date: new Date(Date.now())
+    date: new Date(Date.now()),
   },
   {
     name: "Jarrod's White",
@@ -31,7 +32,8 @@ const itemSeed = [
     region: "McLaren Vale",
     price: 14.49,
     inventory: 144,
-    description: "From the land of Downunder comes a high acid wine for any occasion. Pair with hard cheeses and bocce ball on warm Spring afternoon.",
+    description:
+      "From the land of ownunder comes a high acid wine for any occasion. Pair with hard cheeses and bocce ball on warm Spring afternoon.",
     photo: "",
     date: new Date(Date.now()),
   },
@@ -44,7 +46,8 @@ const itemSeed = [
     region: "Burgundy",
     price: 11.29,
     inventory: 144,
-    description: "This is Alex's secret Rosé stash that he shares only on exceptional vintages. Get ready to be 'wowed' with this gem.",
+    description:
+      "This is Alex's secret Rosé stash that he shares only on exceptional vintages. Get ready to be 'wowed' with this gem.",
     photo: "",
     date: new Date(Date.now()),
   },
@@ -57,7 +60,8 @@ const itemSeed = [
     region: "Galicia",
     price: 18.49,
     inventory: 144,
-    description: "Funky",
+    description:
+      "From multiple plots of Mencía vines with an average age of 40 years old, located in and around Ribeira Sacra. The un-oaked, regional tinto is all about immediate pleasure with pure, lush red fruits, spices, and slate-laden minerality.  A wine to pair with all kinds of foods, especially chorizos, embutidos, roast pork, spicy foods, any dish with a lot of Pimentón. ",
     photo: "guimaro",
     date: new Date(Date.now()),
   },
@@ -213,21 +217,23 @@ const itemSeed = [
     region: "Baja California",
     price: 26.09,
     inventory: 144,
-    description: "For real?",
+    description:
+      "The nose is of dried apricot and pear. Nectar with slate minerality on the second sip. Almost medicinal but not unpleasantly so. A real natural expression of the Tecate terroir",
     photo: "bichi",
     date: new Date(Date.now()),
   },
   {
-    name: "Borgo Paglianetto Verdicchio di Matelica Ergon",
-    category: "White",
-    varietal: "Verdicchio",
+    name: "Mirco Mariotti Fortana dell'Emilia Rosato 'Sèt e Mèz'",
+    category: "Rosé",
+    varietal: "Fortana",
     origin: "Europe",
     country: "Italy",
-    region: "Marche",
+    region: "Emilia-Romagna",
     price: 19.99,
     inventory: 144,
-    description: "Yes, please!",
-    photo: "borgo",
+    description:
+      "This is made from a rare red called Fortana – a savoury wild thing with high acid and a black cherry or wild strawberry notes depending on vintage; it also has a bitter vermouth-like spice to it. I find it similar to the Lambrusco di Sorbara, with a less refined acidity but a more a savory complexity. Yes, please!",
+    photo: "setemez",
     date: new Date(Date.now()),
   },
   {

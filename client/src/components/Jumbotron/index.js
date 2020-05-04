@@ -14,7 +14,9 @@ function Jumbotron({ children }) {
       className="jumbotron jumbotron-fluid"
     >
       <container style={{backgroundColor: 'black'}}>
-      {children}
+        <p>
+        {children}
+        </p>
       </container>
     </div>
   );
