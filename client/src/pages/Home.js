@@ -22,29 +22,28 @@ function Home() {
   return (
     <Container fluid>
       <Jumbotron>
-        <h1>Welcome to the Thunderdome!!!</h1>
+        <h1>Welcome to the Good Wine & Fine Spirits!!!</h1>
       </Jumbotron>
-      <h2>You've hit the home page,</h2>
-      <h3>
-        Alex <del>is gonna</del> put some ill photos here!
-      </h3>
-      <h3>
-        This will be styled better late, probably in a component. But it works!
-      </h3>
+      <div className="conainer">
+        <h3>
+          This is your source for creating, reading, updating and deleting
+          inventory.
+        </h3>
+      </div>
+      <br />
+
       <Row>
-      {
-        items.map( (item) => {
-          return(
-              <Link to={'/items/' + item._id }>
+        {items.map((item) => {
+          return (
+            <Link to={"/items/" + item._id}>
               <img
                 src={item.photo && require("../images/" + item.photo + ".jpg")}
                 className="wine-image"
                 alt={item.name}
               />
-              </Link>  
-          )
-      })
-      }
+            </Link>
+          );
+        })}
       </Row>
     </Container>
   );

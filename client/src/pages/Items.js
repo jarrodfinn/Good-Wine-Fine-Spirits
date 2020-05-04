@@ -43,7 +43,7 @@ function Items() {
         <Col size="md-1"></Col>
         <Col size="md-10 sm-12">
           <Jumbotron>
-            <h1>Wines in Inventory</h1>
+            <h1>Current Inventory Items </h1>
           </Jumbotron>
           {items.length ? (
             <List>
@@ -54,8 +54,12 @@ function Items() {
                       {item.name} - {item.varietal} - ${item.price}
                     </em>
                   </Link>
-                  <DeleteBtn onClick={() => deleteItem(item._id)} />
+                  <div >
+                    <DeleteBtn onClick={() => deleteItem(item._id)} />
+                  </div>
+                  <div>                    
                   <AddToCartBtn onClick={() => addItemToCart()} />
+                 </div>
                 </ListItem>
               ))}
             </List>
