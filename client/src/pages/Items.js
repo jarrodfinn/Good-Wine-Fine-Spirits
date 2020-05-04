@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import "./style.css";
-import AddToCartBtn from "../components/AddToCartBtn";
+import FavoriteBtn from "../components/FavoriteBtn";
 
 function Items() {
   // Setting our component's initial state
@@ -31,12 +31,12 @@ function Items() {
       .catch((err) => console.log(err));
   }
 
-  function addItemToCart() {
-    return (
-      <h1>THIS BUTTON WILL WORK</h1>
-    )
+  function favoriteItem(id) {
+    API.favorite(id)
+      .then((res) => loadItems())
+      .catch((err) => console.log(err));
   }
-  
+
   return (
     <Container fluid>
       <Row>
@@ -60,7 +60,7 @@ function Items() {
                     </em>
                   </Link>
                   <div>
-                    <AddToCartBtn onClick={() => addItemToCart()} />
+                    <FavoriteBtn onClick={() => favoriteItem(item._id)} />
                   </div>
                   <div>
                     <DeleteBtn onClick={() => deleteItem(item._id)} />
