@@ -1,4 +1,7 @@
-
-.navbar{
-    background-color: lightsalmon;
+.navbar {
+  background-color: lightsalmon;
+}
+.border {
+  width: relative;
+  border-bottom: black 30px;
 }

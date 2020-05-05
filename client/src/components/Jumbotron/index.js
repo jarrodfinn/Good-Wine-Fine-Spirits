@@ -7,18 +7,15 @@ function Jumbotron({ children }) {
         height: 250,
         clear: "both",
         paddingTop: 100,
+        alignContent: "center",
         textAlign: "center",
         backgroundImage: `url(${bgimage})`,
-        color: "forestgreen"
       }}
       className="jumbotron jumbotron-fluid"
     >
-      <container style={{backgroundColor: 'black'}}>
       {children}
-      </container>
     </div>
   );
 }
 
 export default Jumbotron;
-

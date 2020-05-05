@@ -4,6 +4,7 @@ import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import * as images from "../images";
+import "./style.css";
 
 function Detail(props) {
   const [item, setItem] = useState({});
@@ -21,7 +22,7 @@ function Detail(props) {
       <Row>
         <Col size="md-12">
           <Jumbotron>
-            <h1>
+            <h1 className="jumboTitle" style={{ marginLeft: "390px" }}>
               <i>
                 {item.name} - {item.varietal} - {item.inventory} bottles
               </i>
@@ -34,15 +35,15 @@ function Detail(props) {
           <div className="container">
             <div className="row row-cols-3">
               <div className="col">
-                <h4>Price: </h4>
+                <h4 className="ptag">Price: </h4>
                 <p>${item.price}</p>
               </div>
               <div className="col">
-                <h4>Country: </h4>
+                <h4 className="ptag">Country: </h4>
                 <p>{item.country}</p>
               </div>
               <div className="col">
-                <h4>Quantity On Hand (bottles): </h4>
+                <h4 className="ptag">Quantity On Hand (bottles): </h4>
                 <p>{item.inventory}</p>
               </div>
             </div>
@@ -51,7 +52,7 @@ function Detail(props) {
             <br />
             <div className="row row-cols-3">
               <div className="col">
-                <h4>Wine Label: </h4>
+                <h4 className="ptag">Wine Label: </h4>
                 <img
                   alt="wine"
                   src={images[item.photo]}
@@ -64,7 +65,7 @@ function Detail(props) {
                 />
               </div>
               <div className="col">
-                <h4>Description: </h4>
+                <h4 className="ptag">Description: </h4>
                 <p>{item.description}</p>
               </div>
             </div>

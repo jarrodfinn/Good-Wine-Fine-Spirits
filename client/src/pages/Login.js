@@ -1,70 +1,68 @@
 import React, { useState } from "react";
-// import DeleteBtn from "../components/DeleteBtn";
 import Jumbotron from "../components/Jumbotron";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { Input, FormBtn } from "../components/Form";
+import "./style.css";
 
 function Login() {
-    const [formObject, setFormObject] = useState({});
-    // Handles updating component state when the user types into the input field
-    function handleInputChange(event) {
-        const { name, value } = event.target;
-        setFormObject({ ...formObject, [name]: value });
-    }
+  const [formObject, setFormObject] = useState({});
+  // Handles updating component state when the user types into the input field
+  function handleInputChange(event) {
+    const { name, value } = event.target;
+    setFormObject({ ...formObject, [name]: value });
+  }
 
-    return (
-      <Container fluid>
-        <Row>
-          <Col size="md-2">
-            {" "}
-            <img
-              style={{
-                height: "705px",
-                width:"250px"
-              }}
-              src={require("../images/wine.jpg")}
-              alt="wine"
+  return (
+    <Container fluid>
+      <Row>
+        <Col size="md-2">
+          {" "}
+          <img
+            style={{
+              height: "600px",
+              width: "300px",
+            }}
+            src={require("../images/outline-black-bottle.jpg")}
+            alt="wine"
+          />
+        </Col>
+        <Col size="md-8">
+          <Jumbotron>
+            <p className="jumboTitle"><h1>Login</h1></p>
+          </Jumbotron>
+          <form>
+            <Input
+              onChange={handleInputChange}
+              name="username"
+              placeholder="Username (required)"
             />
-          </Col>
-          <Col size="md-8">
-            <Jumbotron>
-              <h1>Login</h1>
-            </Jumbotron>
-            <form>
-              <Input
-                onChange={handleInputChange}
-                name="username"
-                placeholder="Username (required)"
-              />
-              <Input
-                onChange={handleInputChange}
-                name="password"
-                placeholder="Password (required)"
-              />
+            <Input
+              onChange={handleInputChange}
+              name="password"
+              placeholder="Password (required)"
+            />
 
-              <Link to="/home">
-                <FormBtn
-                  disabled={!(formObject.username && formObject.password)}
-                >
-                  Login
-                </FormBtn>
-              </Link>
-            </form>
-          </Col>
-          <Col size="md-2">
-            <img
-              style={{
-                height: "705px",
-                width:"250px"
-              }}
-              src={require("../images/wine.jpg")}
-              alt="wine"
-            />
-          </Col>
-        </Row>
-      </Container>
-    );
+            <Link to="/home">
+              <FormBtn disabled={!(formObject.username && formObject.password)}>
+                Login
+              </FormBtn>
+            </Link>
+          </form>
+        </Col>
+        <Col size="md-2">
+          <img
+            style={{
+              height: "600px",
+              width: "300px",
+            }}
+            src={require("../images/outline-black-bottle.jpg")}
+            alt="wine"
+          />
+        </Col>
+      </Row>
+    </Container>
+  );
 }
 
 export default Login;

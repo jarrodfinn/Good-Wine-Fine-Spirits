@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import "./style.css";
 
 
 function Items() {
@@ -58,80 +59,83 @@ function Items() {
       <Row>
         <Col size="md-7">
           <Jumbotron>
+            <p className="jumboTitle" style={{ marginLeft: "200px" }}>
+              <h1>Create a NEW inventory item: </h1>
+            </p>
           </Jumbotron>
-          <h1>Create a NEW inventory item: </h1>
           <form>
-          <div>
-          <p>Name: </p><Input
-              onChange={handleInputChange}
-              name="name"
-              placeholder="Name (required)"
-            />
-          </div>
-          <div>
-            <p>Category: </p>
-          <Input
-              onChange={handleInputChange}
-              name="category"
-              placeholder="Category (required)"
-            />
-          </div>
-          <div>
-            <p>Varietal: </p>
-          <Input
-              onChange={handleInputChange}
-              name="varietal"
-              placeholder="Varietal (required)"
-            />
-          </div>
-          <div>
-            <p>Origin: </p>
-          <Input
-              onChange={handleInputChange}
-              name="origin"
-              placeholder="Origin (required)"
-            />
-          </div>
-          <div>
-            <p>Country: </p>
-          <Input
-              onChange={handleInputChange}
-              name="country"
-              placeholder="Country (required)"
-            />
-          </div>
-          <div>
-            <p>Region: </p>
-          <Input
-              onChange={handleInputChange}
-              name="region"
-              placeholder="Region (required)"
-            />
-          </div>
-          <div>
-            <p>Price: </p>
-          <Input
-              onChange={handleInputChange}
-              name="price"
-              placeholder="Price (required)"
-            />
-          </div>
-          <div>
-            <p>Inventory Amount: </p>
-          <Input
-              onChange={handleInputChange}
-              name="inventory"
-              placeholder="Inventory Amount (required)"
-            />
-          </div>
-          <div>
-            <p>Description: </p>
-          <TextArea
-              onChange={handleInputChange}
-              name="description"
-              placeholder="Description (required)"
-            />
-          </div>
+            <div>
+              <p className="ptag">Name: </p>
+              <Input
+                onChange={handleInputChange}
+                name="name"
+                placeholder="Name (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Category: </p>
+              <Input
+                onChange={handleInputChange}
+                name="category"
+                placeholder="Category (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Varietal: </p>
+              <Input
+                onChange={handleInputChange}
+                name="varietal"
+                placeholder="Varietal (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Origin: </p>
+              <Input
+                onChange={handleInputChange}
+                name="origin"
+                placeholder="Origin (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Country: </p>
+              <Input
+                onChange={handleInputChange}
+                name="country"
+                placeholder="Country (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Region: </p>
+              <Input
+                onChange={handleInputChange}
+                name="region"
+                placeholder="Region (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Price: </p>
+              <Input
+                onChange={handleInputChange}
+                name="price"
+                placeholder="Price (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Inventory Amount: </p>
+              <Input
+                onChange={handleInputChange}
+                name="inventory"
+                placeholder="Inventory Amount (required)"
+              />
+            </div>
+            <div>
+              <p className="ptag">Description: </p>
+              <TextArea
+                onChange={handleInputChange}
+                name="description"
+                placeholder="Description (required)"
+              />
+            </div>
             <FormBtn
               disabled={!(formObject.name && formObject.varietal)}
               onClick={handleFormSubmit}
@@ -142,8 +146,10 @@ function Items() {
         </Col>
         <Col size="md-5">
           <Jumbotron>
+            <p className="jumboTitle" style={{ marginLeft: "200px" }}>
+              <h1>Current Inventory Items: </h1>
+            </p>
           </Jumbotron>
-          <h1>Current Inventory Items </h1>
           {items.length ? (
             <List>
               {items.map((item) => (
@@ -151,8 +157,9 @@ function Items() {
                   <Link to={"/items/" + item._id}>
                     <em
                       style={{
-                        color: "darkblue",
-                        fontSize:"20px"
+                        color: "lightsalmon",
+                        fontSize: "20px",
+                        textDecoration: "underline",
                       }}
                     >
                       {item.name} - {item.varietal} - ${item.price}

@@ -3,7 +3,12 @@ import "./style.css";
 // import { Link } from "react-router-dom";
 function Nav() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light collapse navbar-collapse">
+    <nav
+      className="navbar navbar-expand-lg navbar-light collapse navbar-collapse border-bottom border-dark"
+      // style={{
+      //   borderBottom: "35px"
+      // }}
+    >
       <a className="navbar-brand navbar-nav mr-auto" href="/home">
         <h3>Good Wine and Fine Spirits</h3>
       </a>
