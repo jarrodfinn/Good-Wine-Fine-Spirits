@@ -10,48 +10,6 @@ mongoose.connect(
 
 const itemSeed = [
   {
-    name: "Brian's Red",
-    category: "Red",
-    varietal: "Pinot Noir",
-    origin: "North America",
-    country: "USA",
-    region: "Pennslyvania",
-    price: 10.89,
-    inventory: 144,
-    description:
-      "An uplifting red wine from the Lehigh Valley. On the nose red-currant, molasses and wild sage, with hints of bramble and mint on the finish. ",
-    photo: "brian",
-    date: new Date(Date.now()),
-  },
-  {
-    name: "Jarrod's White",
-    category: "White",
-    varietal: "Riesling",
-    origin: "Oceania",
-    country: "Australia",
-    region: "McLaren Vale",
-    price: 14.49,
-    inventory: 144,
-    description:
-      "From the land of ownunder comes a high acid wine for any occasion. Pair with hard cheeses and bocce ball on warm Spring afternoon.",
-    photo: "jarrod",
-    date: new Date(Date.now()),
-  },
-  {
-    name: "Alex's Rosé",
-    category: "Rose",
-    varietal: "Gamay",
-    origin: "Europe",
-    country: "France",
-    region: "Burgundy",
-    price: 11.29,
-    inventory: 144,
-    description:
-      "This is Alex's secret Rosé stash that he shares only on exceptional vintages. Get ready to be 'wowed' with this gem.",
-    photo: "alex",
-    date: new Date(Date.now()),
-  },
-  {
     name: "Guimaro Riberia Sacra Tinto",
     category: "Red",
     varietal: "Mencia",
@@ -105,6 +63,48 @@ const itemSeed = [
     description:
       "Müller has the rare distinction of being comprised of Müller Thurgau sourced from not only Baden but also from a respected grower in the Mosel as well – undoubtedly this accounts for the wine’s extra blast of energy and high-toned kick. The Baden fruit fermented for 3-4 days on the skins, the Mosel fruit for just one. After pressing, 30-40% of the grapes skins are added back into the tank and the wine sits on the lees for 8-9 months. Lightly filtered and contains only a tiny amount of sulfur, added at bottling",
     photo: "enderle",
+    date: new Date(Date.now()),
+  },
+  {
+    name: "Brian's Red",
+    category: "Red",
+    varietal: "Pinot Noir",
+    origin: "North America",
+    country: "USA",
+    region: "Pennslyvania",
+    price: 10.89,
+    inventory: 144,
+    description:
+      "An uplifting red wine from the Lehigh Valley. On the nose red-currant, molasses and wild sage, with hints of bramble and mint on the finish. ",
+    photo: "brian",
+    date: new Date(Date.now()),
+  },
+  {
+    name: "Jarrod's White",
+    category: "White",
+    varietal: "Riesling",
+    origin: "Oceania",
+    country: "Australia",
+    region: "McLaren Vale",
+    price: 14.49,
+    inventory: 144,
+    description:
+      "From the land of ownunder comes a high acid wine for any occasion. Pair with hard cheeses and bocce ball on warm Spring afternoon.",
+    photo: "jarrod",
+    date: new Date(Date.now()),
+  },
+  {
+    name: "Alex's Rosé",
+    category: "Rose",
+    varietal: "Gamay",
+    origin: "Europe",
+    country: "France",
+    region: "Burgundy",
+    price: 11.29,
+    inventory: 144,
+    description:
+      "This is Alex's secret Rosé stash that he shares only on exceptional vintages. Get ready to be 'wowed' with this gem.",
+    photo: "alex",
     date: new Date(Date.now()),
   },
   {
@@ -270,7 +270,8 @@ const itemSeed = [
     region: "Veneto",
     price: 17.29,
     inventory: 144,
-    description: "This is your perfect brunch Prosecco: simple enough for Bellinis, tasty and fresh enough to drink on its own. Made by artisans, but not priced that way.",
+    description:
+      "This is your perfect brunch Prosecco: simple enough for Bellinis, tasty and fresh enough to drink on its own. Made by artisans, but not priced that way.",
     photo: "serata",
     date: new Date(Date.now()),
   },
