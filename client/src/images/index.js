@@ -19,4 +19,4 @@ import alex from "./alex.jpg";
 import brian from "./brian.jpg";
 import jarrod from "./jarrod.jpg";
 
-export {alex,benoit,bichi,borgo, brian,campo,douro,enderle,escandalo,gandines,grolet,guimaro, jarrod, montozzi,nerantzi,piollot,serata,setemez,siete,subliminal}
+export {alex,benoit,bichi,borgo, brian,campo,douro,enderle,escandalo,gandines,grolet,guimaro,jarrod,montozzi,nerantzi,piollot,serata,setemez,siete,subliminal}
