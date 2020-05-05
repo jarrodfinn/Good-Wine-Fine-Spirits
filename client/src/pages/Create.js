@@ -53,7 +53,21 @@ function Items() {
       .catch((err) => console.log(err));
     }
   }
-
+  // handleCategoryChange = (event) => {
+  //   const category = event.target.value;
+  //   if (category === "All") {
+  //     this.setState({ employees: this.state.allEmployees });
+  //   } else {
+  //     this.setState({
+  //       employees: this.state.allEmployees.filter(function (employee) {
+  //         if (employee.category === category) {
+  //           return true;
+  //         }
+  //         return false;
+  //       }),
+  //     });
+  //   }
+  // };
   return (
     <Container fluid>
       <Row>
@@ -150,6 +164,13 @@ function Items() {
               <h1>Current Inventory Items: </h1>
             </p>
           </Jumbotron>
+          {/* <div>
+            <label htmlFor="category">Filter by category:</label>
+            <select onChange={this.handleCategoryChange} id="category">
+              <option value="All">All</option>
+            </select>
+          </div> */}
+
           {items.length ? (
             <List>
               {items.map((item) => (
