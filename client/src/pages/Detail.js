@@ -83,7 +83,7 @@ function Detail(props) {
                 fontSize: "20px",
               }}
             >
-              ← Back
+              ← Wine Inventory List
             </div>
           </Link>
         </Col>
