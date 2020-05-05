@@ -29,7 +29,9 @@ function Login() {
         </Col>
         <Col size="md-8">
           <Jumbotron>
-            <p className="jumboTitle"><h1>Login</h1></p>
+            <p className="jumboTitle" style={{ marginLeft: "270px" }}>
+              <h1>Login</h1>
+            </p>
           </Jumbotron>
           <form>
             <Input
