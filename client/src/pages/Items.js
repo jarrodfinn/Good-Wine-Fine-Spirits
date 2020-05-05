@@ -47,6 +47,7 @@ function Items() {
               <h1>Current Inventory: </h1>
             </p>
           </Jumbotron>
+          
           {items.length ? (
             <List>
               {items.map((item) => (

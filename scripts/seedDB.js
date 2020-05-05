@@ -20,7 +20,7 @@ const itemSeed = [
     inventory: 144,
     description:
       "An uplifting red wine from the Lehigh Valley. On the nose red-currant, molasses and wild sage, with hints of bramble and mint on the finish. ",
-    photo: "",
+    photo: "brian",
     date: new Date(Date.now()),
   },
   {
@@ -34,7 +34,7 @@ const itemSeed = [
     inventory: 144,
     description:
       "From the land of ownunder comes a high acid wine for any occasion. Pair with hard cheeses and bocce ball on warm Spring afternoon.",
-    photo: "",
+    photo: "jarrod",
     date: new Date(Date.now()),
   },
   {
@@ -48,7 +48,7 @@ const itemSeed = [
     inventory: 144,
     description:
       "This is Alex's secret Rosé stash that he shares only on exceptional vintages. Get ready to be 'wowed' with this gem.",
-    photo: "",
+    photo: "alex",
     date: new Date(Date.now()),
   },
   {

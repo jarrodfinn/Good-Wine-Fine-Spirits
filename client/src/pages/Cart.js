@@ -31,11 +31,11 @@ function Cart() {
   }
   return (
     <Container fluid>
-          <Jumbotron>
-            <p className="jumboTitle">
+      <Jumbotron>
+        <p className="jumboTitle" style={{ marginLeft: "380px" }}>
           <h1>Cart</h1>
-          </p>
-          </Jumbotron>
+        </p>
+      </Jumbotron>
     </Container>
   );
 }
