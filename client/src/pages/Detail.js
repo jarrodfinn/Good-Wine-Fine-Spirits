@@ -22,7 +22,7 @@ function Detail(props) {
       <Row>
         <Col size="md-12">
           <Jumbotron>
-            <h1 className="jumboTitle">
+            <h1 className="jumboTitle" style={{ marginLeft: "390px" }}>
               <i>
                 {item.name} - {item.varietal} - {item.inventory} bottles
               </i>

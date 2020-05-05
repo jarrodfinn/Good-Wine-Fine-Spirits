@@ -22,7 +22,7 @@ function Home() {
   return (
     <Container fluid>
       <Jumbotron>
-        <p className="jumboTitle">
+        <p className="jumboTitle" style={{marginLeft: "390px"}}>
         <h1>Welcome to Good Wine & Fine Spirits!!!</h1>
         </p>
       </Jumbotron>

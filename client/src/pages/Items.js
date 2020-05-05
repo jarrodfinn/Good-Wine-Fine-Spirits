@@ -43,8 +43,8 @@ function Items() {
         <Col size="md-1"></Col>
         <Col size="md-10 sm-12">
           <Jumbotron>
-            <p className="jumboTitle">
-              <h1>Current Inventory Items: </h1>
+            <p className="jumboTitle" style={{ marginLeft: "320px" }}>
+              <h1>Current Inventory: </h1>
             </p>
           </Jumbotron>
           {items.length ? (

@@ -59,7 +59,7 @@ function Items() {
       <Row>
         <Col size="md-7">
           <Jumbotron>
-            <p className="jumboTitle">
+            <p className="jumboTitle" style={{ marginLeft: "200px" }}>
               <h1>Create a NEW inventory item: </h1>
             </p>
           </Jumbotron>
@@ -146,7 +146,7 @@ function Items() {
         </Col>
         <Col size="md-5">
           <Jumbotron>
-            <p className="jumboTitle">
+            <p className="jumboTitle" style={{ marginLeft: "200px" }}>
               <h1>Current Inventory Items: </h1>
             </p>
           </Jumbotron>
@@ -159,7 +159,7 @@ function Items() {
                       style={{
                         color: "lightsalmon",
                         fontSize: "20px",
-                        textDecoration: 'underline',
+                        textDecoration: "underline",
                       }}
                     >
                       {item.name} - {item.varietal} - ${item.price}

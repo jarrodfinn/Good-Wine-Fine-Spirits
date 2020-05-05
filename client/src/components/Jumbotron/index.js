@@ -7,6 +7,7 @@ function Jumbotron({ children }) {
         height: 250,
         clear: "both",
         paddingTop: 100,
+        alignContent: "center",
         textAlign: "center",
         backgroundImage: `url(${bgimage})`,
       }}

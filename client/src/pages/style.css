@@ -13,8 +13,8 @@
 .jumboTitle {
 background-color: white;
 color: darkslategray;
-padding-bottom: 8px;
-padding-top: 4px;
-
+border: black 1px solid;
+width: 50%;
+align-content: center;
 }
 
