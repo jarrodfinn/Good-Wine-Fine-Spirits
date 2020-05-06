@@ -2,13 +2,20 @@
 Good Wine and Fine Spirits
 
 ## Description
-This toool allows you to manage your inventory on hand, add new inventory, sort existing inventory as well as filter by category. It is designed to organize your logistically needs. 
+The idea began with the PLCB shutdown and how cool it would be to create a website that was an ecommerce platform with client function separate from employee functions. From there we chose to begin with an inventory management system.
+
+This tool allows you to manage your inventory on hand, add new inventory, sort existing inventory and filter products by category. This is designed to organize your logistical needs. 
 
 ## Visuals
-//will hold final screen shots of app
+![image1](./client/src/images/good-wine-flow/A.png)
+![image2](./client/src/images/good-wine-flow/B.png)
+![image3](./client/src/images/good-wine-flow/C.png)
+![image4](./client/src/images/good-wine-flow/D.png)
+![image5](./client/src/images/good-wine-flow/E.png)
+![image6](./client/src/images/good-wine-flow/F.png)
 
 ## Usage
-
+<strong>AS</strong> a logistics manager, <strong>I WANT</strong> to control my inventory system, <strong>SO THAT</strong> my business can run successfully.
 ## Roadmap
 
 ## Authors and acknowledgment
