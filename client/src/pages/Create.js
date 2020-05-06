@@ -7,31 +7,25 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import "./style.css";
 
-
 function Items() {
   // Setting our component's initial state
   const [items, setItems] = useState([]);
   const [formObject, setFormObject] = useState({});
-
   // Load all items and store them with setitems
   useEffect(() => {
     loadItems();
   }, []);
-
   // Loads all items and sets them to items
   function loadItems() {
     API.getItems()
       .then((res) => setItems(res.data))
       .catch((err) => console.log(err));
   }
-
-
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value });
   }
-
   // When the form is submitted, use the API.saveitem method to save the item data
   // Then reload items from the database
   function handleFormSubmit(event) {
@@ -48,26 +42,11 @@ function Items() {
         price: formObject.price,
         inventory: formObject.inventory,
         description: formObject.description,
-              }).then((res) => loadItems())
-    //   console.log(formObject.name);
-      .catch((err) => console.log(err));
+      })
+        .then((res) => loadItems())
+        .catch((err) => console.log(err));
     }
   }
-  // handleCategoryChange = (event) => {
-  //   const category = event.target.value;
-  //   if (category === "All") {
-  //     this.setState({ employees: this.state.allEmployees });
-  //   } else {
-  //     this.setState({
-  //       employees: this.state.allEmployees.filter(function (employee) {
-  //         if (employee.category === category) {
-  //           return true;
-  //         }
-  //         return false;
-  //       }),
-  //     });
-  //   }
-  // };
   return (
     <Container fluid>
       <Row>
@@ -164,13 +143,6 @@ function Items() {
               <h1>Current Inventory Items: </h1>
             </p>
           </Jumbotron>
-          {/* <div>
-            <label htmlFor="category">Filter by category:</label>
-            <select onChange={this.handleCategoryChange} id="category">
-              <option value="All">All</option>
-            </select>
-          </div> */}
-
           {items.length ? (
             <List>
               {items.map((item) => (

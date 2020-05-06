@@ -36,6 +36,11 @@ function Items() {
       .then((res) => loadItems())
       .catch((err) => console.log(err));
   }
+  // handleCategoryChange = (event) => {
+  //   const category = event.target.value;
+  //   if (category === "All") {
+  //   }
+  // };
 
   return (
     <Container fluid>
@@ -47,7 +52,61 @@ function Items() {
               <h1>Current Inventory: </h1>
             </p>
           </Jumbotron>
-          
+          <div>
+            <label
+              htmlFor="category"
+              style={{
+                color: "lightsalmon",
+                fontSize: "14px",
+                textDecoration: "underline",
+              }}
+            >
+              Filter by category: 
+            </label>
+            <select
+              id="category"
+              style={{
+                color: "lightsalmon",
+                fontSize: "14px",
+                textDecoration: "underline",
+              }}
+            >
+              <option value="All">All</option>
+              <option value="Red">Red</option>
+              <option value="White">White</option>
+              <option value="Sparkling">Sparkling</option>
+              <option value="Rosé">Rosé</option>
+              <option value="Orange">Orange</option>
+            </select>
+          </div>
+          <div>
+            <label
+              htmlFor="origin"
+              style={{
+                color: "lightsalmon",
+                fontSize: "14px",
+                textDecoration: "underline",
+              }}
+            >
+              Sort by origin: 
+            </label>
+            <select
+              id="origin"
+              style={{
+                color: "lightsalmon",
+                fontSize: "14px",
+                textDecoration: "underline",
+              }}
+            >
+              <option value="All">All</option>
+              <option value="NorthAmerica">North America</option>
+              <option value="SouthAmerica">South America</option>
+              <option value="Europe">Europe</option>
+              <option value="Oceania">Oceania</option>
+              <option value="SouthAfrica">South Africa</option>
+            </select>
+          </div>
+
           {items.length ? (
             <List>
               {items.map((item) => (
