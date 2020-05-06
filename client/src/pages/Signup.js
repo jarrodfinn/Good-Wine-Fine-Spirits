@@ -5,22 +5,18 @@ import { Col, Row, Container } from "../components/Grid";
 import { Input, FormBtn } from "../components/Form";
 import "./style.css";
 
-function Login() {
+function Signup() {
   const [formObject, setFormObject] = useState({});
-  // const storedUsername = localStorage.getItem('username');
-  const storedPassword = localStorage.getItem('password');
-
   // Handles updating component state when the user types into the input field
   function handleInputChange(event) {
     const { name, value } = event.target;
     setFormObject({ ...formObject, [name]: value });
   }
-  function loginToken() {
-    localStorage.setItem('token', 1);
 
+  function setLogin() {
+    localStorage.setItem('username', formObject.username);
+    localStorage.setItem('password', formObject.password);
   }
-
-
 
   return (
     <Container fluid>
@@ -39,7 +35,7 @@ function Login() {
         <Col size="md-8">
           <Jumbotron>
             <p className="jumboTitle" style={{ marginLeft: "270px" }}>
-              <h1>Login</h1>
+              <h1>Sign Up</h1>
             </p>
           </Jumbotron>
           <form>
@@ -52,18 +48,17 @@ function Login() {
               onChange={handleInputChange}
               name="password"
               placeholder="Password (required)"
-              type="password"
             />
 
-            <Link to="/home">
-              <FormBtn disabled={!(storedPassword === formObject.password)}  onClick={loginToken} >
-                Login
+            <Link to="/">
+              <FormBtn disabled={!(formObject.username && formObject.password)} onClick={setLogin}>
+                Signup
               </FormBtn>
             </Link>
           </form>
-          <a className="navbar-brand navbar-nav mr-auto" href="/signup">
-            <h6>Click here to sign up</h6>
-          </a>
+          <a className="navbar-brand navbar-nav mr-auto" href="/home">
+        <h6>Click here to sign up</h6>
+      </a>
         </Col>
         <Col size="md-2">
           <img
@@ -80,4 +75,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;

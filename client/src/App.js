@@ -7,7 +7,8 @@ import Create from "./pages/Create";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Nav from "./components/Nav";
-import Cart from './pages/Cart'
+import Cart from './pages/Cart';
+import Signup from './pages/Signup'
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Switch>
         <Route exact path={["/"]}>
             <Login />
+          </Route>
+          <Route exact path={["/signup"]}>
+            <Signup />
           </Route>
           <Route exact path={["/home"]}>
             <Home />
