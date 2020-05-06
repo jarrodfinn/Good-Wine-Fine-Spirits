@@ -1,5 +1,16 @@
-.favorite-btn {
+/* .favorite-btn {
     float: right;
     color: darkolivegreen;
-  }
+  } */
   
+  .btn {
+    float: right;
+    margin: -10px 15px 0px 15px;
+  }
+  .switch-off {
+    background-color: white;
+  }
+  .switch-on {
+    background-color: #1bae61;
+    color: white;
+  }
