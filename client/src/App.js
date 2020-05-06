@@ -7,7 +7,6 @@ import Create from "./pages/Create";
 import NoMatch from "./pages/NoMatch";
 import Login from "./pages/Login";
 import Nav from "./components/Nav";
-import Cart from './pages/Cart';
 import Signup from './pages/Signup'
 
 function App() {
@@ -27,9 +26,6 @@ function App() {
           </Route>
           <Route exact path={["/items"]}>
             <Items />
-          </Route>
-          <Route exact path={["/cart"]}>
-            <Cart />
           </Route>
           <Route exact path="/items/:id">
             <Detail />
