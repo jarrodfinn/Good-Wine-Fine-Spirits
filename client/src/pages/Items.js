@@ -60,7 +60,7 @@ function Items() {
                     </em>
                   </Link>
                   <div>
-                    <FavoriteBtn onClick={() => favoriteItem(item._id)} />
+                    <FavoriteBtn />
                   </div>
                   <div>
                     <DeleteBtn onClick={() => deleteItem(item._id)} />
