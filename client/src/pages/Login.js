@@ -26,15 +26,7 @@ function Login() {
     <Container fluid>
       <Row>
         <Col size="md-2">
-          {" "}
-          <img
-            style={{
-              height: "600px",
-              width: "300px",
-            }}
-            src={require("../images/outline-black-bottle.jpg")}
-            alt="wine"
-          />
+
         </Col>
         <Col size="md-8">
           <Jumbotron>
@@ -66,14 +58,7 @@ function Login() {
           </a>
         </Col>
         <Col size="md-2">
-          <img
-            style={{
-              height: "600px",
-              width: "300px",
-            }}
-            src={require("../images/outline-black-bottle.jpg")}
-            alt="wine"
-          />
+
         </Col>
       </Row>
     </Container>
