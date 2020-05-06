@@ -17,7 +17,7 @@ function Nav() {
       // }}
     >
       <a className="navbar-brand navbar-nav mr-auto" href="/home" >
-        <h3>Good Wine and Fine Spirits</h3>
+        <h3>Good Wine & Fine Spirits</h3>
       </a>
       <br />
       <a className="nav-item navbar-brand" href="/create">
