@@ -50,9 +50,10 @@ function Items() {
   return (
     <Container fluid>
       <Row>
-        <Col size="md-7">
+      <Col size="md-1"> </Col>
+        <Col size="md-10">
           <Jumbotron>
-            <p className="jumboTitle" style={{ marginLeft: "200px" }}>
+            <p className="jumboTitle" style={{ marginLeft: "300px" }}>
               <h1>Create a NEW inventory item: </h1>
             </p>
           </Jumbotron>
@@ -137,34 +138,8 @@ function Items() {
             </FormBtn>
           </form>
         </Col>
-        <Col size="md-5">
-          <Jumbotron>
-            <p className="jumboTitle" style={{ marginLeft: "200px" }}>
-              <h1>Current Inventory Items: </h1>
-            </p>
-          </Jumbotron>
-          {items.length ? (
-            <List>
-              {items.map((item) => (
-                <ListItem key={item._id}>
-                  <Link to={"/items/" + item._id}>
-                    <em
-                      style={{
-                        color: "lightsalmon",
-                        fontSize: "20px",
-                        textDecoration: "underline",
-                      }}
-                    >
-                      {item.name} - {item.varietal} - ${item.price}
-                    </em>
-                  </Link>
-                </ListItem>
-              ))}
-            </List>
-          ) : (
-            <h3>No Results to Display</h3>
-          )}
-        </Col>
+        <Col size="md-1"> </Col>
+        
       </Row>
     </Container>
   );
