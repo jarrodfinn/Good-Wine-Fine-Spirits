@@ -16,7 +16,7 @@ This tool allows you to manage your inventory on hand, add new inventory, sort e
 
 ## Usage
 <strong>AS</strong> a logistics manager, <strong>I WANT</strong> to control my inventory system, <strong>SO THAT</strong> my business can run successfully.
-## Roadmap
+
 
 ## Authors and acknowledgment
 Alexander Korjeski, Brian Prickril and Jarrod Finn
