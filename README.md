@@ -4,7 +4,7 @@ Good Wine and Fine Spirits
 
 ## Description
 
-This tool allows you to manage your inventory on hand, add new inventory, sort existing inventory as well as filter by category. It is designed to organize your logistically needs. 
+This tool allows you to manage your inventory on hand, add new inventory, sort existing inventory as well as filter by category. It is designed to organize your logistical needs. 
 
 ## Visuals
 
