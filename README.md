@@ -19,7 +19,6 @@ This tool allows you to manage your inventory on hand, add new inventory, sort e
 ![image4](./client/src/images/good-wine-flow/D.png)
 ![image5](./client/src/images/good-wine-flow/E.png)
 ![image6](./client/src/images/good-wine-flow/F.png)
->>>>>>> 887a1d0866183f001a914cf34a6516e66ca80893
 
 ## Usage
 <strong>AS</strong> a logistics manager, <strong>I WANT</strong> to control my inventory system, <strong>SO THAT</strong> my business can run successfully.
